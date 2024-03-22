@@ -1,6 +1,6 @@
 import './Jogador.css'
 
-const Jogador = ({nome, imagem, classe, corDeFundo}) => {
+const Jogador = ({nome, imagem, classe, subclasse, corDeFundo}) => {
     return (
         <div className='jogador'>
             <div className='cabecalho' style={{backgroundColor: corDeFundo}}>
@@ -9,6 +9,7 @@ const Jogador = ({nome, imagem, classe, corDeFundo}) => {
             <div className='rodape'>
                 <h4>{nome}</h4>
                 <h5>{classe}</h5>
+                <h6>{subclasse}</h6>
             </div>
         </div>
     )
