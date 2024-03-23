@@ -1,9 +1,22 @@
 .banner {
-    background-color: #6278F7;
-    text-align: center;
-
+    background-color: #992244;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    display: flex;
 }
 
 .banner img {
     max-width: 100%;
+    
+}
+
+.banner h1 {
+    color: #DEB887;
+    font-size: 48px;
+}
+
+.banner h2 {
+    color: #DEB887;
+    font-size: 20px;
 }

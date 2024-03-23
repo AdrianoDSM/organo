@@ -23,9 +23,14 @@ export const papeisNaComposicao = [
       corSecundaria: '#d9f7e9'
     },
     {
-      nome: 'Blaster',
+      nome: 'DPS',
       corPrimaria: '#82CFFA',
       corSecundaria: '#E8F8FF'
+    },
+    {
+      nome: 'AoE',
+      corPrimaria: '#00CED1',
+      corSecundaria: '#AFEEEE'
     },
     {
       nome: 'Scout',

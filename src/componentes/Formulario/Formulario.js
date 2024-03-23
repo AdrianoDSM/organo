@@ -12,7 +12,7 @@ const Formulario = (props) => {
     const [subclasse, setSubclasse] = useState('')
     const [imagem, setImagem] = useState('')
     const [papelNaComposicao, setPapelNaComposicao] = useState('')
-
+    
     const aoSalvar = (e) =>{
         e.preventDefault()
         props.aoJogadorCadastrado({
@@ -28,8 +28,7 @@ const Formulario = (props) => {
         setImagem('')
         setPapelNaComposicao('')
     }
-
-    const handleSubclasse = subclasseJogaveis[0][classe] ?? [] 
+    const handleSubclasse = subclasseJogaveis[0][classe]
     
     return (
         <section className='formulario'>
@@ -37,6 +36,7 @@ const Formulario = (props) => {
                 <h2>Preencha os dados para criar o card do Jogador</h2>
                 <CampoTexto obrigatorio={true} label='Nome' placeholder='Digite seu nome' valor={nome} aoAlterado={valor => setNome(valor)}/>
                 <ListaSuspensa obrigatorio={true} label='Classe' valor={classe} aoAlterado={valor => {setClasse(valor); setSubclasse('')}} itens={props.classesJogaveis}/>
+                <br></br>
                 {classe && (<ListaSuspensa obrigatorio={true} label='Subclasse' valor={subclasse} aoAlterado={valor=>{
                     setSubclasse(valor)}} itens={handleSubclasse}/>)}
                 <CampoTexto label='Imagem' placeholder='Digite o endereço da imagem' valor={imagem} aoAlterado={valor => setImagem(valor)}/>
