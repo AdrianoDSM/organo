@@ -16,49 +16,6 @@ export const subclasseJogaveis = [
     }
   ]
 
-export const papeisNaComposicao = [
-    {
-      nome: 'Tank',
-      corPrimaria: '#57c278',
-      corSecundaria: '#d9f7e9'
-    },
-    {
-      nome: 'DPS',
-      corPrimaria: '#82CFFA',
-      corSecundaria: '#E8F8FF'
-    },
-    {
-      nome: 'AoE',
-      corPrimaria: '#00CED1',
-      corSecundaria: '#AFEEEE'
-    },
-    {
-      nome: 'Scout',
-      corPrimaria: '#A6D157',
-      corSecundaria: '#F0F8E2'
-    },
-    {
-      nome: 'Support',
-      corPrimaria: '#E06869',
-      corSecundaria: '#FDE7E8'
-    },
-    {
-      nome: 'Utilitarian',
-      corPrimaria: '#DB6EBF',
-      corSecundaria: '#FAE9F5'
-    },
-    {
-      nome: 'Controller',
-      corPrimaria: '#FFBA05',
-      corSecundaria: '#FFF5D9'
-    },
-    {
-      nome: 'Face',
-      corPrimaria: '#FF8A29',
-      corSecundaria: '#FFEEDF'
-    }
-  ]
-
 export const classesJogaveis = [
     'Artificier',
     'Barbarian',
