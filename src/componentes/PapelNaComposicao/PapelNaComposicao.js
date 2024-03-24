@@ -1,7 +1,6 @@
 import Jogador from '../Jogador/Jogador'
 import './PapelNaComposicao.css'
 import hexToRgba from 'hex-to-rgba'
-import { v4 as uuidv4 } from 'uuid'
 
 const PapelNaComposicao = (props) => {
     return (
@@ -9,7 +8,7 @@ const PapelNaComposicao = (props) => {
             <input onChange={e => props.mudarCor(e.target.value, props.id)} value={props.corPrimaria} type='color' className='input-cor'/>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='jogadores'>
-                {props.jogadores.map(jogador => <Jogador corDeFundo={props.corPrimaria} id={props.id} nome={jogador.nome} classe={jogador.classe} subclasse={jogador.subclasse} imagem={jogador.imagem} aoDeletar={props.aoDeletar}/>)}
+                {props.jogadores.map(jogador => <Jogador corDeFundo={props.corPrimaria} id={jogador.id} nome={jogador.nome} classe={jogador.classe} subclasse={jogador.subclasse} imagem={jogador.imagem} aoDeletar={props.aoDeletar}/>)}
             </div>
         </section>
         : ''
