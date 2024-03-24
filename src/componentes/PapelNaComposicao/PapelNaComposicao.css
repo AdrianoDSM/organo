@@ -6,9 +6,10 @@
 
 .papelNaComposicao h3 {
     font-size: 32px;
-    border-bottom: 4px solid;
+    border-radius: 20px;
     display: inline-block;
-    padding-bottom: 8px;
+    padding: 8px 8px 12px;
+
 }
 
 .papelNaComposicao .jogadores {
