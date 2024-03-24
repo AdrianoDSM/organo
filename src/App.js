@@ -54,11 +54,12 @@ function App() {
 
   const aoNovoJogadorAdicionado = (jogador) => {
     console.log(jogador)
+    jogador.id =  uuidv4()
     setJogadores([...jogadores, jogador])
   }
 
   const deletarJogador = (id) => {
-    console.log('id', id, 'jogadores', jogadores)
+    console.log('id', id, jogadores)
     setJogadores(jogadores.filter(jogador => jogador.id !== id))
   }
 

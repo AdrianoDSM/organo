@@ -9,7 +9,7 @@ const PapelNaComposicao = (props) => {
             <input onChange={e => props.mudarCor(e.target.value, props.id)} value={props.corPrimaria} type='color' className='input-cor'/>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='jogadores'>
-                {props.jogadores.map(jogador => <Jogador corDeFundo={props.corPrimaria} id={uuidv4()} nome={jogador.nome} classe={jogador.classe} subclasse={jogador.subclasse} imagem={jogador.imagem} aoDeletar={props.aoDeletar}/>)}
+                {props.jogadores.map(jogador => <Jogador corDeFundo={props.corPrimaria} id={props.id} nome={jogador.nome} classe={jogador.classe} subclasse={jogador.subclasse} imagem={jogador.imagem} aoDeletar={props.aoDeletar}/>)}
             </div>
         </section>
         : ''

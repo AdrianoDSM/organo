@@ -4,6 +4,7 @@ import ListaSuspensa from '../ListaSuspensa/ListaSuspensa.js'
 import Botao from '../Botao/Botao.js'
 import { useState } from 'react'
 import { subclasseJogaveis } from '../../data.js'
+import { v4 as uuidv4 } from 'uuid'
 
 const Formulario = (props) => {
 

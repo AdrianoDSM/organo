@@ -3,7 +3,7 @@ import './Jogador.css'
 
 
 const Jogador = ({id, nome, imagem, classe, subclasse, corDeFundo, aoDeletar}) => {
-
+    console.log('id', id)
     return (
         <div className='jogador' key={id} id={id}>
             <IoIosCloseCircle 
