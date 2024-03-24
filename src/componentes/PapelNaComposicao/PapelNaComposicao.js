@@ -4,7 +4,7 @@ import hexToRgba from 'hex-to-rgba'
 
 const PapelNaComposicao = (props) => {
     return (
-        (props.jogadores.length > 0) ? <section className='papelNaComposicao' style={{backgroundImage:'url("/imagens/dice-background-img.png")', backgroundSize: '200px 100px', backgroundColor: hexToRgba(props.corPrimaria,'0.6')}}>
+        (props.jogadores.length > 0) ? <section className='papelNaComposicao' style={{backgroundImage:'url("/imagens/dice-background-img.png")', backgroundSize: '500px 300px', backgroundColor: hexToRgba(props.corPrimaria,'0.6')}}>
             <input onChange={e => props.mudarCor(e.target.value, props.id)} value={props.corPrimaria} type='color' className='input-cor'/>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='jogadores'>
